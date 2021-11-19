@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signupActivity"
+    android:orientation="vertical"
+    android:background="#04F40E"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:transitionName="logo_image"
+            android:src="@drawable/earth2"/>
+
+        <TextView
+            android:id="@+id/cpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/bungee"
+            android:text="Community Problems Application"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="23sp" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/baloo"
+        android:text="New User SIGN UP"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:textStyle="bold"/>
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name / పేరు"
+            app:hintAnimationEnabled="true"
+            android:layout_margin="10dp"
+            app:hintTextColor="@color/black"
+            android:background="#fff"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/careofname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_margin="10dp"
+            android:hint="C/O Name/పేరు"
+            app:hintTextColor="@color/black"
+            app:hintAnimationEnabled="true"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DOB/పుట్టిన తేది"
+            android:background="#fff"
+            android:layout_margin="10dp"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="datetime"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/houseno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House NO/ఇంటి నంబర్‌"
+            android:background="#fff"
+            android:layout_margin="10dp"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Districts/జిల్లా"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <Spinner
+            android:scrollbarStyle="insideInset"
+            android:background="#fff"
+            android:id="@+id/districts"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Mandal/మండలం"
+
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+
+            />
+        <Spinner
+            android:id="@+id/mandal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="#fff"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="signup"
+            android:background="#911818"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

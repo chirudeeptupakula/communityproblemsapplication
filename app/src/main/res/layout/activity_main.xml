@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#04F40E"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="334dp">
+
+        <View
+            android:id="@+id/whiteline"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/white_line" />
+
+        <View
+            android:id="@+id/redline"
+            android:layout_width="30dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/whiteline"
+            android:background="@drawable/red_line" />
+
+        <View
+            android:id="@+id/greenline"
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@id/redline"
+            android:background="@drawable/green_line" />
+
+        <View
+            android:id="@+id/whiteline2"
+            android:layout_width="30dp"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/greenline"
+            android:background="@drawable/white_line" />
+
+        <View
+            android:id="@+id/redline2"
+            android:layout_width="30dp"
+            android:layout_height="250dp"
+            android:layout_toRightOf="@id/whiteline2"
+            android:background="@drawable/red_line" />
+
+        <View
+            android:id="@+id/greenline2"
+            android:layout_width="30dp"
+            android:layout_height="300dp"
+            android:layout_toRightOf="@id/redline2"
+            android:background="@drawable/green_line" />
+
+        <View
+            android:id="@+id/whiteline3"
+            android:layout_width="30dp"
+            android:layout_height="350dp"
+            android:layout_toRightOf="@id/greenline2"
+            android:background="@drawable/white_line" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/cpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/baloo"
+            android:text="CPA"
+            android:textColor="#fff"
+            android:textSize="150dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/compa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/baloo"
+                android:text="Community Problems Application"
+                android:textColor="#fff"
+                android:textSize="25dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
